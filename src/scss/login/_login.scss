@@ -1,0 +1,25 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.login {
+    @include m.telefono {
+        margin-top: 5rem;
+    }
+    &__grid {
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 6rem 0 5rem 0;
+        }
+    }
+    &__imagenTelefono {
+        display: none;
+        @include m.tablet {
+            display: block;
+            width: 80%;
+            margin-left: 6rem;
+        }
+    }
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Instagram</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap&family=Bilbo+Swash+Caps&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="build/css/app.css">
+    <script src="https://kit.fontawesome.com/83ae700929.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="login contenedor">
+        <div class="login__grid">
+            <div class="login__imagen">
+                <img class="login__imagenTelefono" src="build/img/telefono_001.avif" alt="imagen telefono">
+            </div>
+            <div class="form contenedor">
+                <div class="form__login">
+                    <h1 class="form__heading">Instagram</h1>
+                    <form class="formulario" action="">
+                        <input class="formulario__input" type="text" placeholder="Teléfono, usuario o correo electronico">
+                        <input class="formulario__input" type="password" placeholder="Contraseña">
+                        <input class="formulario__submit" type="submit" value="Iniciar sesión">
+                    </form>
+
+                    <div class="iniciarSesion">
+                        <a class="iniciarSesion__iniciar" href="/"> <i class="fa-brands fa-facebook iniciarSesion__facebook"></i> Iniciar sesión con Facebook</a>
+                        <a class="iniciarSesion__olvidaste" href="/">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                </div>
+
+                
+
+                <div class="registrarse">
+                    <p class="registrarse__cuenta">¿No tienes una cuenta? <a class="registrarse__registrar" href="/">Registrate</a></p>
+                </div>
+
+                <div class="descargar">
+                    <p class="descargar__app">Descargar App</p>
+                    <div class="descargar__flex">
+                        <div class="descargar__appStore">
+                            <a class="descargar__enlaceAppStore" href="/">
+                                <picture>
+                                    <source srcset="./build/img/disponibleAppStore.avif" type="image/avif">
+                                    <source srcset="./build/img/disponibleAppStore.webp" type="image/webp">
+                                    <img class="descargar__img" loading="lazy" src="./build/img/disponibleAppStore.png" width="500" height="300" alt="descarga lo en app store">
+                                </picture>                
+                            </a>
+                        </div>
+                        <div class="descargar__playStore">
+                            <a class="descargar__enlacePlayStore" href="/">
+                                <picture>
+                                    <source srcset="./build/img/disponibleGooglePlay.avif" type="image/avif">
+                                    <source srcset="./build/img/disponibleGooglePlay.webp" type="image/webp">
+                                    <img class="descargar__img" loading="lazy" src="./build/img/disponibleGooglePlay.png" width="500" height="300" alt="descarga lo en play store">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer contenedor">
+        <div class="footer__flex">
+            <div class="footer__enlaces">
+                <a class="footer__enlace" href="/">Meta</a>
+                <a class="footer__enlace" href="/">Información</a>
+                <a class="footer__enlace" href="/">Blog</a>
+                <a class="footer__enlace" href="/">Empleo</a>
+                <a class="footer__enlace" href="/">Aydua</a>
+                <a class="footer__enlace" href="/">API</a>
+                <a class="footer__enlace" href="/">Privacidad</a>
+                <a class="footer__enlace" href="/">Condiciones</a>
+                <a class="footer__enlace" href="/">Cuentas destacadas</a>
+                <a class="footer__enlace" href="/">Hashtags</a>
+                <a class="footer__enlace" href="/">Ubicaciones</a>
+                <a class="footer__enlace" href="/">Instagram Lite</a>
+            </div>
+            <div class="footer__enlaces">
+                <a class="footer__enlace" href="/">Danza</a>
+                <a class="footer__enlace" href="/">Comida y bebida</a>
+                <a class="footer__enlace" href="/">Casa y jardín</a>
+                <a class="footer__enlace" href="/">Música</a>
+                <a class="footer__enlace" href="/">Artes visuales</a>
+            </div>
+            <div class="copyright">
+                <select class="copyright__idioma" name="" id="">
+                    <!-- <option value="" disabled>-- Seleccione --</option> -->
+                    <option value="espanhol">Español</option>
+                    <option value="ingles">Inglés</option>
+                </select>
+                <p class="copyright__2022">&copy; Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

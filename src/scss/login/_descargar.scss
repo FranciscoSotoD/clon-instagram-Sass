@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descargar {
+    @include m.tablet {
+        padding: 2rem 0;
+    }
+    &__app {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    &__flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+    &__img {
+        width: 15rem;
+    }
+}

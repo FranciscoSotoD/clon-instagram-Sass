@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+
+.formulario {
+
+    &__input {
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 1rem;
+        outline: none;
+        border: 2px solid v.$cafeClaro;
+        border-radius: 5px;
+        font-size: 1.4rem;
+    }
+    &__submit {
+        margin-top: .5rem;
+        background-color: v.$secundario;
+        padding: 1rem;
+        width: 100%;
+        cursor: pointer;
+        color: v.$blanco;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        font-size: 1.4rem;
+        transition-property: background-color color;
+        transition-duration: .3s;
+        &:hover {
+            background-color: v.$blanco;
+            color: v.$secundario;
+            border: 1px solid v.$secundario;
+        }
+    }
+}

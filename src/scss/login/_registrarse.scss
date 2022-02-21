@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.registrarse {
+    margin-top: 1rem;
+    padding: 6rem 0;
+    text-align: center;
+    &__cuenta {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    @include m.telefono {
+        padding: 2rem 0;
+        border: 1px solid v.$grisFuerte;
+        background-color: v.$blanco;
+    }
+    &__registrar {
+        color: v.$secundario;
+        font-weight: 700;
+    }
+}

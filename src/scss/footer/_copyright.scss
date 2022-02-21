@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+
+.copyright {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    &__idioma {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    &__2022 {
+        font-size: 1.2rem;
+    }
+}

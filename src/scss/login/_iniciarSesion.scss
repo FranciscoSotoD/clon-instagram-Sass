@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+
+.iniciarSesion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+    &__iniciar {
+        color: v.$azulFuerte;
+    }
+    &__facebook {
+        color: v.$secundario;
+        font-size: 2rem;
+    }
+    &__olvidaste {
+        color: v.$negro;
+        font-size: 1.4rem;
+    }
+}
